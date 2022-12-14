@@ -10,9 +10,15 @@
 </head>
 <body>
     <section class="py-5">
+       
             <div class="container">
                 <input type="text" class="form-control" id="live_search" autocapitalize="off" placeholder="search">
             </div>
+
+            <div class="container">
+                <div id="searchResult"> </div>
+            </div>
+
     </section>
 
 
@@ -25,8 +31,25 @@
         $(document).ready(function(){
             $('#live_search').keyup(function(){
                 var input = $(this).val(); 
-                alert(input);
-            })
+             //   alert(input);
+             if(input !="")
+             {
+                $.ajax({
+                    url: "livesearch.php", 
+                    method: "post", 
+                    data:{input:input}, 
+
+                    success:function(data)
+                    {
+                        $("#searchResult").html(data);
+                    }
+                })
+             }
+             else {
+                $("#searchResult").css("diplay", "none");
+             }
+            });
+
         });
     </script>
 
