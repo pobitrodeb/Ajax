@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $("div").first().css("background-color", "black");
+    $("p").filter(".intro").css("background-color", "yellow");
 })
