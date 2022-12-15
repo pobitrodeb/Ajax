@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Session </title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <section class="py-5"> <div class="container text-center text-primary">  <h1>jQuery Tabs</h1> </div> </section>
+    
+    <section>
+        <div class="container">
+            <div id="tabs">
+                <ul>
+                  <li><a href="#tabs-1">Tab 1 </a></li>
+                  <li><a href="#tabs-2">Tab 2 </a></li>
+                  <li><a href="#tabs-3">Tab 3 </a></li>
+                </ul>
+
+                <div id="tabs-1">
+                  <p> this is first tab </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aperiam animi iusto sapiente. Commodi placeat quos odit fugiat vero vel, repellat quo laudantium accusantium, laborum, consequuntur quidem? Reiciendis, omnis aliquid!
+                  </p>
+                </div>
+
+                <div id="tabs-2">
+                  <p> this is two tab  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, fuga. Corrupti, distinctio totam? Porro consequuntur nesciunt, at iure placeat facilis animi debitis minus nisi dolor minima, quaerat magni, quidem praesentium?
+                  </p>
+                </div>
+
+                <div id="tabs-3">
+                    <p>This is three tab </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cupiditate porro assumenda! Eaque sequi odio praesentium commodi nesciunt magni sit animi, error, labore eius aliquam officia ex tempora recusandae nihil?
+                    </p>
+                </div>
+
+              </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#tabs" ).tabs();
+        } );
+    </script>
+</body>
+</html>
