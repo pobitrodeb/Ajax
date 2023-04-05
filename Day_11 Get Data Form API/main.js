@@ -11,7 +11,9 @@ function loadJokes()
     {
         if(this.status === 200)
         {
-            console.log(this.responseText); 
+            // console.log(this.responseText); 
+            let data = JSON.parse(this.responseText); 
+            console.log(data)
         }
     }
     xhr.send();
