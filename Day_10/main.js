@@ -7,7 +7,8 @@ function loadData()
     xhr.onload = function(){
 
         if(this.status === 200){
-            console.log(this.responseText)
+            // console.log(this.responseText)
+            document.getElementById('output').innerHTML = `<p> ${this.responseText}</p>`
         }
     }
     xhr.send();
